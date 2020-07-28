@@ -1,5 +1,5 @@
 import React from 'react';
-import Restaurant from './Restaurant.js';
+import Restaurant from '../components/Restaurant.js';
 
 
 function App() {
