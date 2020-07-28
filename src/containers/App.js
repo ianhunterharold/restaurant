@@ -1,13 +1,12 @@
 import React from 'react';
+import Restaurant from './Restaurant.js';
 
 
 function App() {
   return (
-    <div>
-      <header>
-        React 
-      </header>
-    </div>
+    <>
+    <Restaurant/>
+    </>
   );
 }
 
