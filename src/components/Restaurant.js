@@ -1,8 +1,10 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import Card from 'react-bootstrap/Button';
 
 
 export default function Restaurant(){
+
     const [restaurants, setRestaurants] = useState([]);
 
     useEffect(()=> {
@@ -18,17 +20,27 @@ export default function Restaurant(){
           })
     },[])
 
-    const card = () => {
-      return (
-        <div>
-          
-        </div>
-      )
-    }
+    // const card = (data) => {
 
+    //   return data.map((locale)=> {
+    //     <div>
+    //       <Card style={{ width: '20rem' }}>
+    //         <Card.Body>
+    //           <Card.Title>locale.name</Card.Title>
+    //           <Card.Text>
+    //             Some quick example text to build on the card title and make up the bulk of
+    //             the card's content.
+    //           </Card.Text>
+    //         </Card.Body>
+    //       </Card>
+    //     </div>
+    //   })
+    // }
+
+  
     return(
-        <>
-        Restaruants 
-        </>
-    );
+      <>
+        {restaurants.map( locale => locale.name ) }
+      </>
+    )
 };
